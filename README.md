@@ -11,11 +11,8 @@
 ![fastqc_sequence_counts_plot](https://user-images.githubusercontent.com/60792064/157739763-11b7686f-5924-419e-a4b3-8d7ece79d07b.png)
 
 Если обратить внимание на отдельные отчеты FastQC, то мы также наблюдает, что все основные параметры в пределах допустимых значений для всех чтений, заисключением параметра "Per base sequence quality" для образца `ENCFF250WAH`.
-||`ENCFF250WAH`|`ENCFF023EPH`|`ENCFF640MKX`|
-|"Per base sequence quality"|![WAH_quality](https://user-images.githubusercontent.com/60792064/157741052-12aa4d30-6068-44e9-96fe-0f634241ae99.png)
-|![EPH_quality](https://user-images.githubusercontent.com/60792064/157741096-0342de3c-9962-478f-a2a9-72eca3b4e375.png)
-|![MKX_quality](https://user-images.githubusercontent.com/60792064/157741141-3f935413-d223-4724-a6c0-2b8c76d5e54b.png)
-|
+|characteristic|`ENCFF250WAH`|`ENCFF023EPH`|`ENCFF640MKX`|
+|"Per base sequence quality"|![WAH_quality](https://user-images.githubusercontent.com/60792064/157741052-12aa4d30-6068-44e9-96fe-0f634241ae99.png)|![EPH_quality](https://user-images.githubusercontent.com/60792064/157741096-0342de3c-9962-478f-a2a9-72eca3b4e375.png)|![MKX_quality](https://user-images.githubusercontent.com/60792064/157741141-3f935413-d223-4724-a6c0-2b8c76d5e54b.png)|
 
 Из этого делаем вывод, что необходимо провести подрезаниче чтений для файла `ENCFF250WAH.fastq`. Сделаем это с помощью `trimmomatic`. 
 Посмотим вновь на "Per base sequence quality" характеристику для подрезанного fastq-файла: 
